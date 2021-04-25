@@ -1,4 +1,4 @@
-﻿namespace NASA.Mars.Contracts
+﻿namespace NASA.Mars.Contracts.Parsers
 {
     public interface IPositionParser
     {

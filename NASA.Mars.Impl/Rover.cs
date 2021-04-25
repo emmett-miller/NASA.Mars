@@ -2,7 +2,10 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
+using NASA.Mars.Contracts.Sequencers;
 using System.Text;
+using NASA.Mars.Contracts.Constraints;
+using NASA.Mars.Contracts.Commands;
 
 namespace NASA.Mars.Impl
 {

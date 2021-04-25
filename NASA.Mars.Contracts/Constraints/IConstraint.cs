@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NASA.Mars.Contracts
+namespace NASA.Mars.Contracts.Constraints
 {
     public interface IConstraint
     {

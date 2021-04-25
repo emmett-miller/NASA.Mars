@@ -1,4 +1,7 @@
 ﻿using NASA.Mars.Impl;
+using NASA.Mars.Impl.Constraints;
+using NASA.Mars.Impl.Parsers;
+using NASA.Mars.Impl.Sequencers;
 using System;
 
 namespace NASA.Mars

@@ -1,4 +1,5 @@
 ﻿using NASA.Mars.Contracts;
+using NASA.Mars.Contracts.Commands;
 using System;
 using System.Collections.Generic;
 using System.Linq;

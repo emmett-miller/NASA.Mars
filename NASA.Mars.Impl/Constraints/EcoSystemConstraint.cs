@@ -1,13 +1,14 @@
 ﻿using NASA.Mars.Contracts;
+using NASA.Mars.Contracts.Constraints;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NASA.Mars.Impl
+namespace NASA.Mars.Impl.Constraints
 {
-    public class EcoSystemConstraint : IConstraint
+    public struct EcoSystemConstraint : IConstraint
     {
         public int XMax { get; set; }
         public int YMax { get; set; }

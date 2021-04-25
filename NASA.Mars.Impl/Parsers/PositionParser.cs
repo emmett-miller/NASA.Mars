@@ -1,8 +1,9 @@
 ﻿using NASA.Mars.Contracts;
+using NASA.Mars.Contracts.Parsers;
 using System;
 using System.Text.RegularExpressions;
 
-namespace NASA.Mars.Impl
+namespace NASA.Mars.Impl.Parsers
 {
     public class PositionParser : IPositionParser
     {
