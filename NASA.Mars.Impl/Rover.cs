@@ -17,8 +17,6 @@ namespace NASA.Mars.Impl
         public IPosition CurrentPosition { get; set; }
         public ICommandSequencer CommandSequencer { get; set; }
 
-        public Dictionary<string, Dictionary<string, Action>> _allowedMovements { get; set; }
-
         public Rover(IPosition initialPosition, ICommandSequencer commandSequencer, IConstraint constraint)
         {
             CurrentPosition = initialPosition;
