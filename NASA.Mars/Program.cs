@@ -10,12 +10,16 @@ namespace NASA.Mars
     {
         static void Main(string[] args)
         {
-            var rover0 = new Rover(new Position(new PositionParser(), "[10 10 N]"), new SimpleCommandSequencer(), new SystemConstraint());
+            var positionParser = new PositionParser();
+            var initialPosition = "[10 10 N]";
+            var commonStartingPosition = new Position(positionParser, initialPosition);
+
+            var rover0 = new Rover(commonStartingPosition, new SimpleCommandSequencer(), new SystemConstraint());
             rover0.Move("R1R3L2L1");
             Console.WriteLine($"{rover0}");
 
-            var rover1 = new Rover(new Position(new PositionParser(), "[10 10 N]"), new SimpleCommandSequencer(), new EcoSystemConstraint(40, 30));
-            rover1.Move("R1R3L2L1");
+            var rover1 = new Rover(commonStartingPosition, new SimpleCommandSequencer(), new EcoSystemConstraint(40, 30));
+            rover1.Move("R5L1L4R1");
             Console.WriteLine($"{rover1}");
         }
     }
