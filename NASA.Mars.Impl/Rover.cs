@@ -9,7 +9,6 @@ namespace NASA.Mars.Impl
     public class Rover : IRover
     {
         private Stack<IPosition> _positions;
-        private int _units;
 
         public IConstraint Constraint { get; set; }
         public IPosition CurrentPosition { get; set; }
@@ -22,15 +21,6 @@ namespace NASA.Mars.Impl
             CurrentPosition = initialPosition;
             CommandSequencer = commandSequencer;
             Constraint = constraint;
-
-            //_allowedMovements = new Dictionary<string, Dictionary<string, Action>>();
-            //var directionalMovements = new Dictionary<string, Action>();
-            //directionalMovements.Add("E", () => SetPosition(CurrentPosition.X + _units, CurrentPosition.Y, "E"));
-            //directionalMovements.Add("E", () => SetPosition(CurrentPosition.X - _units, CurrentPosition.Y, "W"));
-            //directionalMovements.Add("E", () => SetPosition(CurrentPosition.X + _units, CurrentPosition.Y, "E"));
-            //directionalMovements.Add("E", () => SetPosition(CurrentPosition.X + _units, CurrentPosition.Y, "E"));
-
-            // _allowedMovements.Add("N", )
 
             _positions = new Stack<IPosition>();
             _positions.Push(initialPosition);
