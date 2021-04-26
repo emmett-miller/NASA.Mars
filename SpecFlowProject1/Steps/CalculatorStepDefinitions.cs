@@ -1,6 +1,6 @@
 ﻿using TechTalk.SpecFlow;
 
-namespace NASA.Mars.Specs.Steps
+namespace SpecFlowProject1.Steps
 {
     [Binding]
     public sealed class CalculatorStepDefinitions

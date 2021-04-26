@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net48</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -26,10 +26,6 @@
   <ItemGroup>
     <Folder Include="Drivers\" />
     <Folder Include="Hooks\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\NASA.Mars.Impl\NASA.Mars.Impl.csproj" />
   </ItemGroup>
 
 </Project>
