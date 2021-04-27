@@ -41,9 +41,10 @@ namespace NASA.Mars.Impl
 
         private void Trundle(ICommand command)
         {
-            // TODO pull up to save cycles
+            // TODO Add allowed movement to Command (so 8 additional commands) add IAgent Move(ICommand??)
+            // TOOD add dictionary with command for each and return tuple in command
             var allowedMovements = new Dictionary<string, (string Orientation, string Command, int X, int Y, string Direction)>();
-            // pretty sure there's a bug in here somewhere TODO: complete specs
+            
             allowedMovements.Add("NR", (Orientation: "N", Command: "R", X: CurrentPosition.X + command.Units, Y: CurrentPosition.Y, Direction: "E"));
             allowedMovements.Add("NL", (Orientation: "N", Command: "L", X: CurrentPosition.X - command.Units, Y: CurrentPosition.Y, Direction: "W"));
             allowedMovements.Add("SR", (Orientation: "S", Command: "R", X: CurrentPosition.X - command.Units, Y: CurrentPosition.Y, Direction: "W"));
